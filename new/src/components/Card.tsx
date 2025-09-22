@@ -23,7 +23,7 @@ export default function Card({ card, onToggle, onRemove }: CardProps) {
       <div className="flex justify-between">
         <button
           onClick={() => onRemove(card.id)}
-          className="px-3 py-1.5 rounded-4xl bg-[#FBFDFE] border-1 border-[#C7C7C7] hover:border-[#21212C] dark:bg-[#21212C]/90 text-[#09093C] dark:text-[#C7C7C7] text-base cursor-pointer  hover:bg-[#C7C7C7] hover:dark:bg-[#2F364B] hover:dark:text-[#FBFDFE] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#2F364B] shadow-sm shadow-[#545969] transform hover:scale-110  transition-all duration-300 ease-in-out"
+          className="px-3 py-1.5 rounded-4xl bg-[#FBFDFE] border-1 border-[#545969]  dark:bg-[#21212C]/90 text-[#09093C] dark:text-[#C7C7C7] text-base cursor-pointer shadow-sm  hover:bg-[#C7C7C7]/50 hover:dark:bg-[#545969] hover:border-none hover:dark:text-[#FBFDFE] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#21212C] transform hover:scale-110  transition-all duration-300 ease-in-out"
         >
         Remove
         </button>
@@ -32,7 +32,7 @@ export default function Card({ card, onToggle, onRemove }: CardProps) {
           type="button"
           aria-label="switch"
           className={`relative w-9 h-5 rounded-full transition-colors mt-2  duration-300  ${
-            enabled ? "cursor-pointer  bg-[#C6221A] dark:bg-[#F25C54] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#2F364B]" : "bg-[#C7C7C7] dark:bg-[#545969] cursor-pointer shadow-sm shadow-[#545969] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#2F364B]"
+            enabled ? "cursor-pointer  bg-[#C6221A] dark:bg-[#F25C54] shadow-sm hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#21212C]" : "bg-[#C7C7C7] dark:bg-[#545969] cursor-pointer shadow-sm shadow-[#545969] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#21212C]"
           }`}
           onClick={() => onToggle(card.id)} 
         >

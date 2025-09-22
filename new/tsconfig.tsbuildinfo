@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/card.tsx","./src/components/cardlist.tsx","./src/components/sortingbuttons.tsx","./src/data/cards.ts"],"version":"5.8.3"}

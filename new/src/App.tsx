@@ -43,7 +43,7 @@ useEffect(() => {
          <button
             aria-label="Toggle theme"
            onClick={toggleTheme}
-           className="rounded-2xl p-4 bg-[#C7C7C7] dark:bg-[#2F364B] cursor-pointer text-[#09093C] dark:text-[#FBFDFE] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#2F364B] transform hover:scale-110  transition-all duration-300 ease-in-out shadow-sm">{theme === 'light' ? <img src="/icon-moon.svg" alt="Moon icon" className="w-5 h-5" /> : <img src="/icon-sun.svg" alt="Sun Icon" className="w-5 h-5"/> }
+           className="rounded-2xl p-4 bg-[#C7C7C7]/50 dark:bg-[#2F364B] text-[#09093C] dark:text-[#FBFDFE] shadow-sm cursor-pointer hover:dark:bg-[#545969] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#21212C] transform hover:scale-110  transition-all duration-300 ease-in-out">{theme === 'light' ? <img src="/icon-moon.svg" alt="Moon icon" className="w-5 h-5" /> : <img src="/icon-sun.svg" alt="Sun Icon" className="w-5 h-5"/> }
          </button>
       </div>
 
