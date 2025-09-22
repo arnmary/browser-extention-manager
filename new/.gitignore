@@ -1,0 +1,67 @@
+# -------------------------
+# Project design files
+# -------------------------
+*.sketch
+*.fig
+*.xd
+
+# -------------------------
+# Dependencies
+# -------------------------
+node_modules/
+.pnp
+.pnp.js
+
+# -------------------------
+# Environment and secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+.vercel
+
+# -------------------------
+# Testing
+# -------------------------
+coverage/
+
+# -------------------------
+# Production / build outputs
+# -------------------------
+dist/
+dist-ssr/
+build/
+.next/
+out/
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -------------------------
+# IDEs and editors
+# -------------------------
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# -------------------------
+# Misc
+# -------------------------
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?c
+*.pem
+.DS_Store
+Thumbs.db
