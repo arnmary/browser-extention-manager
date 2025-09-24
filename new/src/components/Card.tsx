@@ -11,9 +11,9 @@ export default function Card({ card, onToggle, onRemove }: CardProps) {
 
   return (
     <div className="p-5 rounded-3xl  bg-white dark:bg-[#21212C]/90 dark:text-white flex flex-col justify-between gap-5  shadow-sm shadow-[#545969]">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 md:flex-wrap">
         <img src={card.icon} alt={`${card.title} icon`} className="w-14 h-14" />
-        <div className="flex flex-col w-60">
+        <div className="flex flex-col flex-wrap w-60">
           <h2 className="font-bold text-2xl">{card.title}</h2>
         <p className="text-base text-[#545969] dark:text-[#C7C7C7]">{card.description}</p>
         </div>
@@ -23,7 +23,7 @@ export default function Card({ card, onToggle, onRemove }: CardProps) {
       <div className="flex justify-between">
         <button
           onClick={() => onRemove(card.id)}
-          className="px-3 py-1.5 rounded-4xl bg-[#FBFDFE] border-1 border-[#545969]  dark:bg-[#21212C]/90 text-[#09093C] dark:text-[#C7C7C7] text-base cursor-pointer shadow-sm  hover:bg-[#C7C7C7]/50 hover:dark:bg-[#545969] hover:border-none hover:dark:text-[#FBFDFE] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#21212C] transform hover:scale-110  transition-all duration-300 ease-in-out"
+          className="px-3 py-1.5 rounded-4xl bg-[#FBFDFE] border-1 border-[#545969]  dark:bg-[#21212C]/90 text-[#09093C] dark:text-[#C7C7C7] text-base cursor-pointer shadow-sm  hover:bg-[#C7C7C7]/50 hover:dark:bg-[#545969] hover:border-[#C7C7C7]/50 hover:dark:border-[#545969] hover:dark:text-[#FBFDFE] hover:ring-2 hover:ring-[#C6221A] dark:hover:ring-[#C6221A] hover:ring-offset-2 hover:ring-offset-[#FBFDFE] dark:hover:ring-offset-[#21212C] transform hover:scale-110  transition-all duration-300 ease-in-out"
         >
         Remove
         </button>
