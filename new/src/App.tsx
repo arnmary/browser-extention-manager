@@ -33,7 +33,7 @@ useEffect(() => {
   return (
     <>
     <div className="h-auto min-h-screen bg-gradient-to-b from-[#EBF2FC] to-[#EEF8F9] dark:from-[#040918] dark:to-[#091540] transition-all px-4 py-5 sm:py-10 else-in-out"> 
-      <header className="bg-[#FBFDFE] dark:bg-[#21212C]/90 mx-auto w-full sm:w-[83%] flex justify-between items-center rounded-2xl pb-1.5 p-4  text-[#09093C] dark:text-[#FBFDFE] shadow-sm">
+      <header className="bg-[#FBFDFE] dark:bg-[#21212C]/90 mx-auto w-full sm:w-[83%] flex justify-between items-center rounded-2xl sm:pb-1.5 pb- p-2 sm:p-4  text-[#09093C] dark:text-[#FBFDFE] shadow-sm">
          <div>
            {theme === "dark" ? (<img src="/logo1.svg" alt="Dark Logo" className="h-11" />
            ) : ( 
@@ -47,7 +47,7 @@ useEffect(() => {
          </button>
       </header>
 
-        <main className="text-[#09093C] dark:text-white py-15.5">
+        <main className="text-[#09093C] dark:text-white py-8.5 sm:py-15.5">
            <CardList/>
 
        </main>

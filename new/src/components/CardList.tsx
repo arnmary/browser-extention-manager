@@ -23,9 +23,9 @@ setCards(prev =>
     })
   return (
     <>
-    <div className="ww-ful sm:w-[83%] mx-auto">
-        <div className="flex flex-col sm:flex-row justify-center sm:justify-between gap-6 mb-8">
-             <h1 className="font-noto font-bold text-lg sm:text-4xl text-center">
+    <div className="w-ful sm:w-[83%] mx-auto">
+        <div className="font-noto flex flex-col sm:flex-row justify-center sm:justify-between gap-6 mb-10 sm:mb-8">
+             <h1 className="font-bold text-4xl sm:text-4xl text-center">
           Extension List
              </h1>
         <SortingButtons
